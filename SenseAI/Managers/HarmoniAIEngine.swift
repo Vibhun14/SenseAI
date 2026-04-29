@@ -216,12 +216,16 @@ class HarmoniAIEngine: ObservableObject {
 
         if drumsStrongOnsets.contains(frame) && frame - lastStrongFrame > 6 {
             lastStrongFrame = frame
+            lastHapticFrame = frame
             strongHit = true
             hapticEvent = .heavy
-        } else if isBeat && bassStrongOnsets.contains(frame) && frame - lastHapticFrame > 8 {
+        } else if isBeat && frame - lastHapticFrame > 4 {
+            // ↑ lowered from 8 → 4 so softer beats aren't skipped
             lastHapticFrame = frame
             hapticEvent = .medium
-        } else if vocalsStrongOnsets.contains(frame) && frame - lastHapticFrame > 12 {
+        } else if (vocalsStrongOnsets.contains(frame) || drumsEnergy > 0.15)
+                   && frame - lastHapticFrame > 4 {
+            // ↑ added drumsEnergy threshold to catch softer drum hits
             lastHapticFrame = frame
             hapticEvent = .soft
         }
