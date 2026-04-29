@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22776DC1AC084FE68F644AD8 /* SenseAIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D078FB95D374C48A815F7F1 /* SenseAIApp.swift */; };
+		9A2912163DCC4E4A8BBAF0A8 /* SenseModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03F739E889E4685BB2F5007 /* SenseModule.swift */; };
+		ABBCC985CF9B477087145E68 /* ModuleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6D195784BD4B539CBD28C7 /* ModuleCardView.swift */; };
+		D234A4752FA18AA500758DE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D234A4732FA18A6D00758DE1 /* Assets.xcassets */; };
+		D281A6C42F84B1F4001886E3 /* BridgeAIEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D281A6C32F84B1F3001886E3 /* BridgeAIEngine.swift */; };
+		D290E3422F8C63E50026EF53 /* HarmoniAIEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290E3412F8C63E50026EF53 /* HarmoniAIEngine.swift */; };
+		D290E3462F8C65920026EF53 /* HarmoniAIImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D290E3452F8C65920026EF53 /* HarmoniAIImporter.swift */; };
+		D2B1D3692F84BBC20074371C /* BridgeAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B1D3622F84B3570074371C /* BridgeAIView.swift */; };
+		D2B1D36A2F84BBC60074371C /* HarmoniAIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B1D3632F84B3570074371C /* HarmoniAIView.swift */; };
+		D2B1D36B2F84BBCA0074371C /* QuietAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B1D3642F84B3570074371C /* QuietAlertView.swift */; };
+		D2B1D36C2F84BBDA0074371C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E502762F6D9B0B00DC82CE /* HomeView.swift */; };
+		D2B1D36D2F84BBDF0074371C /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E502752F6D9B0B00DC82CE /* HistoryView.swift */; };
+		D2B1D36E2F84BBE40074371C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E502782F6D9B0B00DC82CE /* SettingsView.swift */; };
+		D2E5027B2F6D9B0B00DC82CE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E502772F6D9B0B00DC82CE /* ProfileView.swift */; };
+		D2E5027D2F6D9B0B00DC82CE /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E5026D2F6D9B0B00DC82CE /* PermissionsManager.swift */; };
+		D2E5027E2F6D9B0B00DC82CE /* OnboardingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E502732F6D9B0B00DC82CE /* OnboardingFlowView.swift */; };
+		D2E502832F6D9B0B00DC82CE /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E5026C2F6D9B0B00DC82CE /* AppState.swift */; };
+		D2E5028A2F6DAC1500DC82CE /* QuietAlertEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E502892F6DAC1500DC82CE /* QuietAlertEngine.swift */; };
+		D49899B4EC5146ECA80E3328 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5111C03545A9445C9F4DB654 /* ContentView.swift */; };
+		DB66D1ADC7C34D939D01862F /* ModulePlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDB32853EAA4866911D666F /* ModulePlaceholderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0FDB32853EAA4866911D666F /* ModulePlaceholderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModulePlaceholderView.swift; sourceTree = "<group>"; };
+		5111C03545A9445C9F4DB654 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		603FB3D669634AE0A3AAA142 /* SenseAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SenseAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D078FB95D374C48A815F7F1 /* SenseAIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenseAIApp.swift; sourceTree = "<group>"; };
+		D234A4732FA18A6D00758DE1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D281A6C32F84B1F3001886E3 /* BridgeAIEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeAIEngine.swift; sourceTree = "<group>"; };
+		D290E3412F8C63E50026EF53 /* HarmoniAIEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmoniAIEngine.swift; sourceTree = "<group>"; };
+		D290E3452F8C65920026EF53 /* HarmoniAIImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmoniAIImporter.swift; sourceTree = "<group>"; };
+		D2B1D3622F84B3570074371C /* BridgeAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeAIView.swift; sourceTree = "<group>"; };
+		D2B1D3632F84B3570074371C /* HarmoniAIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarmoniAIView.swift; sourceTree = "<group>"; };
+		D2B1D3642F84B3570074371C /* QuietAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietAlertView.swift; sourceTree = "<group>"; };
+		D2E5026C2F6D9B0B00DC82CE /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		D2E5026D2F6D9B0B00DC82CE /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
+		D2E502732F6D9B0B00DC82CE /* OnboardingFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowView.swift; sourceTree = "<group>"; };
+		D2E502752F6D9B0B00DC82CE /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		D2E502762F6D9B0B00DC82CE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D2E502772F6D9B0B00DC82CE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D2E502782F6D9B0B00DC82CE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D2E502892F6DAC1500DC82CE /* QuietAlertEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuietAlertEngine.swift; sourceTree = "<group>"; };
+		D2E5028D2F6DAD0500DC82CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD6D195784BD4B539CBD28C7 /* ModuleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleCardView.swift; sourceTree = "<group>"; };
+		F03F739E889E4685BB2F5007 /* SenseModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenseModule.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D2E502882F6DAB4E00DC82CE /* TrainedModels */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = TrainedModels; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		297956AF36AB4C87A5C3B437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FFD253958134273A9ADBC4F /* SenseAI */ = {
+			isa = PBXGroup;
+			children = (
+				D2E5028D2F6DAD0500DC82CE /* Info.plist */,
+				D234A4732FA18A6D00758DE1 /* Assets.xcassets */,
+				D2E502882F6DAB4E00DC82CE /* TrainedModels */,
+				D2E5026E2F6D9B0B00DC82CE /* Managers */,
+				D2E502792F6D9B0B00DC82CE /* Views */,
+				7D078FB95D374C48A815F7F1 /* SenseAIApp.swift */,
+				5111C03545A9445C9F4DB654 /* ContentView.swift */,
+				A50332148B3D4EA1BF571C43 /* Models */,
+				8C385AAD2E3B4240B02F79F5 /* Components */,
+			);
+			path = SenseAI;
+			sourceTree = "<group>";
+		};
+		277317E3DC2046BBA0BC6C03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				603FB3D669634AE0A3AAA142 /* SenseAI.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31271355152A4CDBB2469D20 = {
+			isa = PBXGroup;
+			children = (
+				1FFD253958134273A9ADBC4F /* SenseAI */,
+				277317E3DC2046BBA0BC6C03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C385AAD2E3B4240B02F79F5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				DD6D195784BD4B539CBD28C7 /* ModuleCardView.swift */,
+				0FDB32853EAA4866911D666F /* ModulePlaceholderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A50332148B3D4EA1BF571C43 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F03F739E889E4685BB2F5007 /* SenseModule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D2E5026E2F6D9B0B00DC82CE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D290E3412F8C63E50026EF53 /* HarmoniAIEngine.swift */,
+				D2E502892F6DAC1500DC82CE /* QuietAlertEngine.swift */,
+				D2E5026C2F6D9B0B00DC82CE /* AppState.swift */,
+				D2E5026D2F6D9B0B00DC82CE /* PermissionsManager.swift */,
+				D281A6C32F84B1F3001886E3 /* BridgeAIEngine.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D2E502722F6D9B0B00DC82CE /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D290E3452F8C65920026EF53 /* HarmoniAIImporter.swift */,
+				D2B1D3622F84B3570074371C /* BridgeAIView.swift */,
+				D2B1D3632F84B3570074371C /* HarmoniAIView.swift */,
+				D2B1D3642F84B3570074371C /* QuietAlertView.swift */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D2E502742F6D9B0B00DC82CE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				D2E502732F6D9B0B00DC82CE /* OnboardingFlowView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D2E502792F6D9B0B00DC82CE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2E502722F6D9B0B00DC82CE /* Modules */,
+				D2E502742F6D9B0B00DC82CE /* Onboarding */,
+				D2E502752F6D9B0B00DC82CE /* HistoryView.swift */,
+				D2E502762F6D9B0B00DC82CE /* HomeView.swift */,
+				D2E502772F6D9B0B00DC82CE /* ProfileView.swift */,
+				D2E502782F6D9B0B00DC82CE /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97A03460397142549C22F716 /* SenseAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB32B15BF05494E9C49F8D1 /* Build configuration list for PBXNativeTarget "SenseAI" */;
+			buildPhases = (
+				89AF117544204872A9FA0B8F /* Sources */,
+				297956AF36AB4C87A5C3B437 /* Frameworks */,
+				50D73877871E405388E4AD76 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D2E502882F6DAB4E00DC82CE /* TrainedModels */,
+			);
+			name = SenseAI;
+			productName = SenseAI;
+			productReference = 603FB3D669634AE0A3AAA142 /* SenseAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D31D3D7301F54C38A7590B4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2630;
+				TargetAttributes = {
+					97A03460397142549C22F716 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 80E843BB5DB84A248C649B40 /* Build configuration list for PBXProject "SenseAI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31271355152A4CDBB2469D20;
+			productRefGroup = 277317E3DC2046BBA0BC6C03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97A03460397142549C22F716 /* SenseAI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50D73877871E405388E4AD76 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D234A4752FA18AA500758DE1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89AF117544204872A9FA0B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22776DC1AC084FE68F644AD8 /* SenseAIApp.swift in Sources */,
+				D290E3462F8C65920026EF53 /* HarmoniAIImporter.swift in Sources */,
+				D2B1D36A2F84BBC60074371C /* HarmoniAIView.swift in Sources */,
+				D49899B4EC5146ECA80E3328 /* ContentView.swift in Sources */,
+				9A2912163DCC4E4A8BBAF0A8 /* SenseModule.swift in Sources */,
+				ABBCC985CF9B477087145E68 /* ModuleCardView.swift in Sources */,
+				D2B1D36C2F84BBDA0074371C /* HomeView.swift in Sources */,
+				D2B1D36D2F84BBDF0074371C /* HistoryView.swift in Sources */,
+				D281A6C42F84B1F4001886E3 /* BridgeAIEngine.swift in Sources */,
+				DB66D1ADC7C34D939D01862F /* ModulePlaceholderView.swift in Sources */,
+				D2E5027B2F6D9B0B00DC82CE /* ProfileView.swift in Sources */,
+				D290E3422F8C63E50026EF53 /* HarmoniAIEngine.swift in Sources */,
+				D2B1D36B2F84BBCA0074371C /* QuietAlertView.swift in Sources */,
+				D2B1D3692F84BBC20074371C /* BridgeAIView.swift in Sources */,
+				D2E5027D2F6D9B0B00DC82CE /* PermissionsManager.swift in Sources */,
+				D2E5027E2F6D9B0B00DC82CE /* OnboardingFlowView.swift in Sources */,
+				D2E5028A2F6DAC1500DC82CE /* QuietAlertEngine.swift in Sources */,
+				D2E502832F6D9B0B00DC82CE /* AppState.swift in Sources */,
+				D2B1D36E2F84BBE40074371C /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3938C9D4C97143BFBE756647 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSTECAT_COMPILER_OPTIMIZATION = space;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SenseAI/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "SenseAI uses your camera for ASL sign language and lip reading in BridgeAI.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SenseAI uses your microphone to detect sounds like alarms and sirens in QuietAlert.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SenseAI uses speech recognition to support lip reading translation.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LE_SWIFT_VERSION = 5.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.senseai.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5ABF3542938A4BF288C16BB2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSET_CATALOG_COMPILER_OPTIMIZATION = space;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 39JPBRMAKM;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D10A897AA6CD4BC79176E8EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSET_CATALOG_COMPILER_OPTIMIZATION = space;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 39JPBRMAKM;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB3C1B4F0C7F4287B8B77F42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				ASSET_CATALOG_COMPILER_OPTIMIZATION = space;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SenseAI/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "SenseAI uses your camera for ASL sign language and lip reading in BridgeAI.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "SenseAI uses your microphone to detect sounds like alarms and sirens in QuietAlert.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "SenseAI uses speech recognition to support lip reading translation.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LE_SWIFT_VERSION = 5.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.senseai.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80E843BB5DB84A248C649B40 /* Build configuration list for PBXProject "SenseAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5ABF3542938A4BF288C16BB2 /* Debug */,
+				D10A897AA6CD4BC79176E8EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB32B15BF05494E9C49F8D1 /* Build configuration list for PBXNativeTarget "SenseAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3938C9D4C97143BFBE756647 /* Debug */,
+				DB3C1B4F0C7F4287B8B77F42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D31D3D7301F54C38A7590B4D /* Project object */;
+}
