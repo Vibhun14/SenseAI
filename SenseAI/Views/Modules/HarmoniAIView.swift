@@ -93,8 +93,8 @@ struct HarmoniAIView: View {
     @State private var peakVocals: Double = 0.1
 
     private let heavyGen  = UIImpactFeedbackGenerator(style: .heavy)
-    private let mediumGen = UIImpactFeedbackGenerator(style: .medium)
-    private let softGen   = UIImpactFeedbackGenerator(style: .soft)
+    private let mediumGen = UIImpactFeedbackGenerator(style: .heavy)   // was .medium
+    private let softGen   = UIImpactFeedbackGenerator(style: .medium)  // was .soft
 
     @State private var showImporter  = false
     @State private var importSession = HarmoniImportSession()
@@ -149,9 +149,14 @@ struct HarmoniAIView: View {
         .onAppear { heavyGen.prepare(); mediumGen.prepare(); softGen.prepare() }
         .onChange(of: engine.hapticEvent) { event in
             switch event {
-            case .heavy:  heavyGen.impactOccurred()
-            case .medium: mediumGen.impactOccurred()
-            case .soft:   softGen.impactOccurred()
+            case .heavy:
+                heavyGen.impactOccurred(intensity: 1.0)
+                // Double-punch for strong hits — second buzz ~12ms later
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.012) {
+                    heavyGen.impactOccurred(intensity: 0.85)
+                }
+            case .medium: mediumGen.impactOccurred(intensity: 1.0)
+            case .soft:   softGen.impactOccurred(intensity: 1.0)
             case .none:   break
             }
         }
